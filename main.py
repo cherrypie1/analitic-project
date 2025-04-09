@@ -1,14 +1,14 @@
 import pandas as pd
 import requests
 import matplotlib
-matplotlib.use('TkAgg')  # Выбор бэкенда
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
-
+#комментарий для пулл реквеста
 
 class CryptoData:
     def __init__(self):
         self.api_url = "https://api.coinlore.net/api/tickers/"
-        self.data_file = "crypto_data.xlsx"  # Объединенный файл
+        self.data_file = "crypto_data.xlsx"
         self.conversion_rates = {
             'USD': 1,
             'BYN': 3.101,
